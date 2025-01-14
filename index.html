@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--하단은 스타일 코드-->
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/center.css"/>
+    <link rel="stylesheet" href="style/clock.css"/>
+    <link rel="stylesheet" href="style/location.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/todo.css"/>
+    <link rel="stylesheet" href="style/weahter.css"/>
+    <title>페이지</title>
+</head>
+<body class="main">
+    <section class="center">
+       <div class="clock">
+            <h3 id="clock" class="clock__text">00:00</h3>
+        </div>
+        <div class="center .name">
+            <form class="hidden",class="name" id="login-form" >
+                <input class="name__input" required  maxlength="15" type="text" placeholder="이름을 입력해주세요">
+                <input clas="" type="submit" value="로그인 버튼" />
+            </form>
+            </div>
+                <h1 id="greeting" class="hidden"></h1>
+            <form class="toDo"id="todo-form">
+                <input type="text" placeholder="할 일을 작성해 주세요" required>
+            </form>
+            <div class="list">
+                <ul class="toDo" id="todo-list"></ul>
+            </div>   
+            <div class="weahter" id="weather">
+                <span class="weahter_-text"></span>
+                <span class="weahter_-text"></span>   
+            </div>
+    </section>
+    <div class="location" id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <!--하단은 자바스크립트 코드-->
+     <script src="js/clock.js"></script>
+     <script src="js/greetings.js"></script>
+     <script src="js/quotes.js"></script>
+     <script src="js/background.js"></script>
+     <script src="js/todo.js"></script>
+     <script src="js/weather.js"></script>
+</body>
+
+</html>
