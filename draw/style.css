@@ -1,0 +1,16 @@
+/*body{
+    background-color: rgba(238, 214, 109, 0.863);
+}*/
+canvas{
+    width:800px;
+    height: 800px;
+    border: 5px solid black;
+    background-color: blanchedalmond;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
