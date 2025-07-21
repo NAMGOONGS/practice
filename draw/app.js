@@ -4,6 +4,20 @@ const ctx = canvas.getContext("2d");
 canvas.width= 800;
 canvas.height=800;
 
+ctx.width=2;
+
+
+function onClick(event){
+    ctx.moveTo(0,0);
+    console.log(event);
+    ctx.lineTo(event.offsetX, event.offsetY);
+    ctx.stroke();
+}
+
+canvas.addEventListener("mousemove",onClick);
+
+
+
 /*ctx.fillRect(200,200,50,200);
 ctx.fillRect(400,200,50,200);
 
@@ -19,7 +33,7 @@ ctx.lineTo(150,200);
 ctx.fill();*/
 
 
-
+/*
 ctx.fillRect(200,200,15,100);
 ctx.fillRect(350,200,15,100);
 ctx.fillRect(250,200,60,200);
@@ -28,7 +42,14 @@ ctx.arc(280,130,50,0,2*Math.PI);
 ctx.fill();
 
 ctx.beginPath();
-ctx.fillStyle = "white";
-ctx.arc(260,130,5,0,2*Math.PI);
-ctx.arc(300,130,5,0,2*Math.PI);
+ctx.fillStyle = "red";
+ctx.arc(260,130,8,0,2*Math.PI);
+ctx.arc(300,130,8,0,2*Math.PI);
 ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = "white";
+ctx.arc(265,130,5,0,2*Math.PI);
+ctx.arc(305,130,5,0,2*Math.PI);
+ctx.fill();*/
+
